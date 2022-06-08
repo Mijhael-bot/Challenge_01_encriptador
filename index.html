@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="stilos/normalize.css">
+    <link rel="stylesheet" href="stilos/style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="imagenes/Logo.png" alt="Logo Alura">
+    </header>
+    <main>
+        <div class="contenedor_escritura">
+            <div class="area_de_escritura">
+                <textarea class="texto" name="texto_ingresado" id="" cols="50" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="botones">
+                <p class="alerta">&#9888; Solo letras minusculas y sin acentos</p>
+                <input id="encriptar" type="button" value="Encriptar">
+                <input id="desencriptar" type="button" value="Desencriptar">
+                
+                <p class="mensaje"></p>
+            </div>
+            <div class="limpiar">
+                <input id="limpiar" type="button" value="Limpiar">
+            </div>
+            
+        </div>
+       <div class="contenedor_resultado">
+           <p class="resultado">
+            
+           </p>
+            <div class="espera">
+                
+                <img src="imagenes/Muñeco.png" alt="Esperando resultado">
+                
+                <p class="p-resultado">Ningun mensaje fue encontrado</p>
+                <p class="p-resultado-2">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div class="copiar">
+                <input id="copiar" type="button" value="Copiar">
+            </div>
+       </div>
+    </main>
+    <footer>
+        <p class="copyright">©Copyright Mijhael Edú Mamani Zapana - 2022</p>
+    </footer>
+    <script src="js/encriptar.js"></script>
+    <script src="js/desencriptar.js"></script>
+    <script src="js/copiar.js"></script>
+    
+</body>
+</html>
