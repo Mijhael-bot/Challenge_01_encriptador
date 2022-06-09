@@ -13,7 +13,6 @@ const llaves = [["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]]
 //funcion para encriptar el texto
 function verificarTexto(){
     var valido = caracteres.test(texto.value);
-    console.log(valido);
     return valido;
 }
 //aparese los estilos 
@@ -22,14 +21,12 @@ function estilos(tipo){
         result.style.display = "block"
         esperando.style.display  = "none";
         copia.style.display  = "block";
-        //texto_mensaje.textContent = ("");
         alert.style.color = "gray";
         texto_mensaje.textContent = ("");
     }else{
         esperando.style.display  = "initial";
         copia.style.display  = "none";
         result.style.display = "none";
-        //texto_mensaje.textContent = ("");
         alert.style.color = "red";
         texto_mensaje.textContent = ("");
     }
